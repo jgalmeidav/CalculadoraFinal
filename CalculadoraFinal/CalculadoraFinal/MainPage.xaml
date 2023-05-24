@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraFinal.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="SlateBlue" Padding="24" CornerRadius="0">
+            <Label Text="Calculadora" HorizontalTextAlignment="Center" TextColor="Orange" FontSize="36"/>
+        </Frame>
+        <Label></Label>
+        <Label Text="Primer número: " FontSize="18" Padding="30,0,30,0"/>
+        <Entry  x:Name="txtNum1" ></Entry>
+        <Label Text="Segundo número: " FontSize="18" Padding="30,0,30,0"/>
+        <Entry  x:Name="txtNum2"></Entry>
+
+        <Label></Label>
+        <Button x:Name="btnSumar" Text="Sumar" FontSize="Subtitle" Background="Black" TextColor="White" 
+                FontAttributes="Bold" Clicked="btnSumar_Clicked"></Button>
+        <Button x:Name="btnRestar" Text="Restar" FontSize="Subtitle" Background="Gray"  
+                FontAttributes="Bold" TextColor="White" Clicked="btnRestar_Clicked"></Button>
+        <Button x:Name="btnMultiplicar" Text="Multiplicar" FontSize="Subtitle" Background="gray" 
+                FontAttributes="Bold" TextColor="White" Clicked="btnMultiplicar_Clicked"></Button>
+        <Button x:Name="btnDividir" Text="Dividir" FontSize="Subtitle" Background="gray" 
+                FontAttributes="Bold" TextColor="White" Clicked="btnDividir_Clicked"></Button>
+        <Label></Label>
+        <Label Text="Resultado: " FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+        <Label x:Name="lblResultado" FontSize="18" HorizontalTextAlignment="Center"></Label>
+    </StackLayout>
+
+</ContentPage>
